@@ -10,6 +10,7 @@ const Investment = () => {
 
   useEffect(() => {
     if (accountActive) setSelectedTab("invest");
+    setAccountActive(false);
   }, [accountActive]);
   
   return (
